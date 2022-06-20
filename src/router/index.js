@@ -1,6 +1,7 @@
 import {
     createRouter,
-    createWebHistory
+    createWebHistory,
+    useRoute
 } from 'vue-router'
 
 import About from '../views/About'

@@ -3,13 +3,25 @@
         <p>
             Copyright &copy; 2022 | Build with &hearts; by Bil Abror
         </p>
-        <router-link to="/about">About</router-link>
+        <div v-show="aboutPage">
+            <router-link to="/about" v-show="true">About</router-link>
+        </div>
     </footer>
 </template>
 
 <script>
+
     export default {
-        name: 'Footer'
+        name: "Footer",
+        computed: {
+            aboutPage() {
+                if (this.$route.path !== '/about') {
+                    return true
+                } else {
+                    return false
+                }
+            }
+        }
     }
     </script>
 

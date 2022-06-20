@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <Header @toggle-add-task="toggleAddTask" title="Hello World" :showAddTask="showAddTask" />
+        <Header @toggle-add-task="toggleAddTask" title="Vue Task" :showAddTask="showAddTask" />
         <router-view :showAddTask="showAddTask"></router-view>
         <Footer />
     </div>
@@ -45,6 +45,7 @@
 
         body {
             font-family: "Poppins",'arial',Sans-Serif;
+            background: #aaa;
         }
 
         .container {
@@ -52,9 +53,17 @@
             margin: 30px auto;
             overflow: auto;
             min-height: 300px;
-            border: 1px solid steelblue;
+            border: 1px solid grey;
             padding: 30px;
             border-radius: 5px;
+            background: #ddd;
+        }
+        .container:hover {
+            transition: .5s;
+            transform: scale(1.02);
+            border: 1px solid steelblue;
+            box-shadow: 5px 5px 5px steelblue;
+
         }
 
         .btn {
