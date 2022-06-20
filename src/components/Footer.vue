@@ -1,0 +1,25 @@
+<template>
+    <footer>
+        <p>
+            Copyright &copy; 2022 | Build with &hearts; by Bil Abror
+        </p>
+        <router-link to="/about">About</router-link>
+    </footer>
+</template>
+
+<script>
+    export default {
+        name: 'Footer'
+    }
+    </script>
+
+    <style>
+        a {
+            color: #333;
+        }
+
+        footer {
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
