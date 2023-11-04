@@ -5,7 +5,7 @@
 npm install
 ```
 
-## Run JSON Server
+### Run JSON Server
 ```
 npm run backend
 ```
